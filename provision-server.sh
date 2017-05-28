@@ -12,7 +12,7 @@ sudo apt-get install -y build-essential checkinstall
 sudo apt-get install -y libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev
 
 # Install pip
-sudo apt-get install -y python3-pip
+sudo apt-get install -y python3-pip virtualenv
 sudo pip install --upgrade pip
 
 # install nodejs 
@@ -22,3 +22,5 @@ sudo apt-get -y install nodejs
 
 # Install Docker
 curl -sSL https://get.docker.com/ | sudo sh
+
+sudo usermod -aG docker ubuntu

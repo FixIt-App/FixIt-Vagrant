@@ -14,7 +14,7 @@ Vagrant.configure("2") do |config|
   config.vm.define "api" do |api|
     api.vm.box = "ubuntu/xenial64"
 
-    api.vm.network "forwarded_port", guest: 8080, host: 8080, id: "API-Server"
+    api.vm.network "forwarded_port", guest: 8080, host: 8080, host_ip: "127.0.0.1", id: "API-Server"
   
     # Use an specific IP address and hostname on local network
     api.vm.network "private_network", ip: "172.16.4.101", auto_config: true
