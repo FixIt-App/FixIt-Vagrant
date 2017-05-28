@@ -80,10 +80,10 @@ git clone git clone https://github.com/FixIt-App/FixIt-Vagrant.git
 
 **Create The Necessary Folders**
 
-When getting the repository from Bitbucket it will create a folder named hs-vagrant. Move into that folder and create a new projects folder. Create api and api-docs folders inside projects.
+When getting the repository from Bitbucket it will create a folder named FixIt-Vagrant. Move into that folder and create a new projects folder. Create api and api-docs folders inside projects.
 
 ```
-cd echo-node-vagrant
+cd FixIt-Vagrant
 mkdir projects
 mkdir projects/server
 ```
@@ -95,7 +95,7 @@ In this step you'll want to go and grab some coffee since this process make take
 You'll want to start the machine from the hs-vagrant folder
 
 ```
-cd echo-vagrant
+cd FixIt-Vagrant
 vagrant up
 ```
 
