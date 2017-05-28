@@ -1,6 +1,6 @@
-# Vagrant machines for HS
+# Vagrant machines for FixIt
 This project helps with an initial setup of virtual machines in a development
-environment to run the HS Web Application
+environment to run the FixIt Web Application
 
 ## Getting started
 To setup these machines you'll need the following installed in your computer
@@ -10,7 +10,7 @@ To setup these machines you'll need the following installed in your computer
 + Vagrant (1.9.3)
 
 Once you have the previous software installed locally in your computer, run the
-following commands to get the servers going
+following commands to get the servers going. If you don't hava experience using vagrant, jump to the detailed steps section.
 
 _**1. Clone the FixIt-Vagrant Project**_
 ```
@@ -32,12 +32,12 @@ _**5. Start virtual machines**_
 vagrant up
 ```
 
-_**6. Verify virtual machines are running**_
+_**6. Verify virtual machine is up and running**_
 ```
 vagrant status
 ```
 
-_**7. ssh into each of the machines**_
+_**7. ssh into the machine**_
 ```
 vagrant ssh server
 ```
@@ -54,7 +54,7 @@ vagrant ssh server
 **.gitignore**
 The instructions to ignore files for git
 
-**provision-web.sh**
+**provision-server.sh**
 All the shell instructions to provision a the api server
 
 **readme.md**
@@ -124,3 +124,4 @@ cd projects
 ```
 git clone https://github.com/FixIt-App/FixIt-Server.git server
 ```
+*SSH into the server vm and follow the instructions in the fixit server wiki*
